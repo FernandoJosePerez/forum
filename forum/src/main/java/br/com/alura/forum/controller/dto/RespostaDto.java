@@ -5,12 +5,12 @@ import java.time.LocalDateTime;
 import br.com.alura.forum.modelo.Resposta;
 
 public class RespostaDto {
-	
+
 	private Long id;
 	private String mensagem;
 	private LocalDateTime dataCriacao;
 	private String nomeAutor;
-	
+
 	public RespostaDto(Resposta resposta) {
 		this.id = resposta.getId();
 		this.mensagem = resposta.getMensagem();
@@ -33,7 +33,5 @@ public class RespostaDto {
 	public String getNomeAutor() {
 		return nomeAutor;
 	}
-	
-	
 
 }
